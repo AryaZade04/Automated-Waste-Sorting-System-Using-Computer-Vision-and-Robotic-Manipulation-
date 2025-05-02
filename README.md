@@ -77,7 +77,8 @@ Below is an example output of the waste detection system:
 
 | Original Image | Detected Waste |
 |----------------|----------------|
-| ![Original and Detected Waste](./abaa1050-57af-48bc-8d18-1f8cd995ec8d.png) |
+|![Detected Waste Output](./waste_detection_output.png)|
+
 
 This output shows:
 - Left: Raw image with mixed waste
