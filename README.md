@@ -75,8 +75,8 @@ This project presents a **computer vision-based waste detection and classificati
 
 Below is an example output of the waste detection system:
 
-| Original Image | Detected Waste |
-|----------------|----------------|
+| Comparison between Original Image & Detected Waste |
+|--------------------------------|
 |![Detected Waste Output](waste_detection_output.png.jpeg)|
 
 
