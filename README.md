@@ -1,55 +1,52 @@
 # 🤖 Automated Waste Sorting System Using Computer Vision and Robotic Manipulation
 
-An AI-powered system that automatically detects and classifies waste types using computer vision, and simulates a robotic arm to sort waste into appropriate bins. Designed for smart recycling and sustainable waste management.
+This project presents a **computer vision-based waste detection and classification system** combined with a **virtual robotic arm** simulation. It identifies different waste types using color and texture features and sorts them into appropriate bins using robotic manipulation logic.
 
 ---
 
-## 📌 Features
+## 📌 Table of Contents
 
-- ✅ Detects and classifies **plastic**, **paper**, **metal**, **glass**, and **organic** waste.
-- 🎯 Uses **color segmentation** and **feature extraction** (texture + HSV).
-- 🦾 Simulates robotic arm pick-and-place sorting.
-- 🖼️ Supports input via:
-  - Sample synthetic images
-  - Custom image uploads
-  - Webcam (if available)
-  - Generated test images
-- 📊 Displays visual detection output and generates bar charts for analytics.
-- 📁 Logs all sorting actions with confidence scores.
-
----
-
-## 🛠️ Tech Stack
-
-| Component        | Technology     |
-|------------------|----------------|
-| Language         | Python         |
-| Computer Vision  | OpenCV         |
-| Data Handling    | NumPy, Pandas  |
-| Visualization    | Matplotlib     |
-| Clustering       | scikit-learn   |
-| Interface (Colab)| IPython, PIL   |
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [How It Works](#-how-it-works)
+- [Usage](#-usage)
+- [Input Options](#-input-options)
+- [Output](#-output)
+- [Simulated Robotic Arm](#-simulated-robotic-arm)
+- [Screenshots](#-screenshots)
+- [Limitations](#-limitations)
+- [Future Work](#-future-work)
+- [License](#-license)
 
 ---
 
-## 🖼️ Waste Categories
+## ✅ Features
 
-| Category | Color Code |
-|----------|------------|
-| Plastic  | Red        |
-| Paper    | Cyan       |
-| Metal    | Gray       |
-| Glass    | Blue       |
-| Organic  | Green      |
+- 📷 Waste detection using HSV color segmentation
+- 🧠 Classification based on visual features and texture
+- 🦾 Simulated robotic arm sorting logic
+- 📊 Visual statistics and logs
+- 🧪 Support for synthetic and uploaded images
+- 📁 Test image generation
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Technologies Used
 
-### 🔧 Installation
+- Python 3.x
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Pillow
+- Google Colab support
+
+---
+
+## ⚙️ Installation
+
+Install the required dependencies:
 
 ```bash
-git clone https://github.com/your-username/automated-waste-sorting-system.git
-cd automated-waste-sorting-system
-pip install -r requirements.txt
-
+pip install opencv-python-headless numpy matplotlib scikit-learn pandas pillow
