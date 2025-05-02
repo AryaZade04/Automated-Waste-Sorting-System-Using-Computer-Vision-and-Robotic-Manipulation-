@@ -71,6 +71,21 @@ This project presents a **computer vision-based waste detection and classificati
 
 ---
 
+ ## 🖼️ Screenshots
+
+Below is an example output of the waste detection system:
+
+| Original Image | Detected Waste |
+|----------------|----------------|
+| ![Original and Detected Waste](./abaa1050-57af-48bc-8d18-1f8cd995ec8d.png) |
+
+This output shows:
+- Left: Raw image with mixed waste
+- Right: System-detected categories like `Paper`, `Plastic`, and `Glass` with confidence scores and bounding boxes.
+
+  ---
+
+
 ## 🤖 Simulated Robotic Arm
 1. The VirtualRobotArm class simulates a 2D robotic arm:
 2. Moves to detected object location
