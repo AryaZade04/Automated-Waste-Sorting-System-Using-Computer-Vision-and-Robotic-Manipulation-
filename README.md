@@ -10,14 +10,9 @@ This project presents a **computer vision-based waste detection and classificati
 - [Technologies Used](#-technologies-used)
 - [Installation](#-installation)
 - [How It Works](#-how-it-works)
-- [Usage](#-usage)
 - [Input Options](#-input-options)
 - [Output](#-output)
 - [Simulated Robotic Arm](#-simulated-robotic-arm)
-- [Screenshots](#-screenshots)
-- [Limitations](#-limitations)
-- [Future Work](#-future-work)
-- [License](#-license)
 
 ---
 
@@ -44,114 +39,49 @@ This project presents a **computer vision-based waste detection and classificati
 
 ---
 
-## ⚙️ Installation
-
-Install the required dependencies:
-
-```bash
-pip install opencv-python-headless numpy matplotlib scikit-learn pandas pillow
-
 ## 🔍 How It Works
-Load an image containing waste materials.
 
-Segment waste items using HSV-based color ranges.
+1. Load an image containing waste materials.
+2. Segment waste items using HSV-based color ranges.
+3. Extract features (average HSV, texture variance).
+4. Classify each item as **plastic**, **paper**, **metal**, **glass**, or **organic**.
+5. Simulate a robotic arm that:
+   - Moves to the item
+   - Picks it up
+   - Places it in the correct bin
+6. Generate output image and statistical visualizations.
 
-Extract features (average HSV, texture variance).
-
-Classify each item as plastic, paper, metal, glass, or organic.
-
-Simulate a robotic arm that:
-
-Moves to the item
-
-Picks it up
-
-Places it in the correct bin
-
-Generate output image and statistical visualizations.
-
-## ▶️ Usage
-Run in Local Python Environment
-bash
-Copy
-Edit
-python pbl_2.py
-Run in Google Colab
-Upload the Waste_sorting_using_robotic_arm.ipynb notebook to Google Colab and run all cells.
+---
 
 ## 🖼️ Input Options
-On running the script, you can choose:
+1. On running the script, you can choose:
+2. Use built-in sample images
+3. Upload your own images (Colab only)
+4. Use webcam input (local only)
+5. Generate test images (recommended for demo)
 
-Use built-in sample images
-
-Upload your own images (Colab only)
-
-Use webcam input (local only)
-
-Generate test images (recommended for demo)
+---
 
 ## 🧾 Output
-Detected waste items with bounding boxes and confidence scores
+1. Detected waste items with bounding boxes and confidence scores
+2. Sorted waste categories
+3. Real-time simulation of robotic movement
+4. Summary bar chart of all waste types processed
+5. Sorting logs in waste_sorting_log.txt
 
-Sorted waste categories
+---
 
-Real-time simulation of robotic movement
-
-Summary bar chart of all waste types processed
-
-Sorting logs in waste_sorting_log.txt
-
-Example log:
-
-csharp
-Copy
-Edit
-2025-05-02 14:22:30 - Detected Plastic with confidence 0.91
-2025-05-02 14:22:35 - Detected Paper with confidence 0.85
 ## 🤖 Simulated Robotic Arm
-The VirtualRobotArm class simulates a 2D robotic arm:
+1. The VirtualRobotArm class simulates a 2D robotic arm:
+2. Moves to detected object location
+3. Picks it up
+4. Moves to the category-specific bin
+5. Releases the item
+6. Positions are printed to the console and visualized in execution.
 
-Moves to detected object location
+---
 
-Picks it up
-
-Moves to the category-specific bin
-
-Releases the item
-
-Positions are printed to the console and visualized in execution.
-
-🖼️ Screenshots
-Add your own screenshots here if you wish.
-
-css
-Copy
-Edit
-Original Image               Detected Waste
-[IMG HERE] ----------------> [IMG WITH BOXES]
-⚠️ Limitations
-Detection accuracy limited by HSV segmentation
-
-No real object detection model (like YOLO or SSD) used
-
-Robotic arm is simulated; no hardware integration yet
-
-Color-based features might fail under different lighting
-
-🔮 Future Work
-Integrate real-world deep learning detection models (e.g., YOLOv8)
-
-Deploy to Raspberry Pi + robotic hardware
-
-Expand detection robustness with dataset training
-
-Real-time edge processing and IoT bin updates
-
-🪪 License
-This project is open-source and for educational use only. No warranties or production deployment implied.
-
-👨‍💻 Author
-Developed by Arya, 2025.
+## 👨‍💻 Author
+Developed by Arya and team, 2025.
 For academic and project demonstration purposes.
-
 
